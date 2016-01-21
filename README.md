@@ -1,2 +1,4 @@
 # 5143-OpSys-Maradala
-My very first repository for operating system
+![]C:\Users\HOME\Desktop
+Prathima Maradala
+e-mail: prathimaanu75@gmail.com
