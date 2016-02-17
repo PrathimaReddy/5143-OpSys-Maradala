@@ -7,7 +7,7 @@ Course : 5143 Operating System
 Date : 17 feb 2016
 
 
-## Question 1
+## what are the three objectives of an OS design ?
  
  There are some standard objectives for the design of an operating system.
  
@@ -25,7 +25,7 @@ Date : 17 feb 2016
   
 Another objective for the design of an operating system is that it should be easy to maintain and upgrade.And it should also be possible to expand the system to include more services to meet user needs. Also, the operating system should be able accommodate any fixes relating to bugs in any computer program.
  
-## Question 2
+## What is the kernel of an OS?
  
  **_Kernel_**
  
@@ -36,16 +36,16 @@ Typically, the kernel is responsible for memory management, process and task man
 has a kernel. For example the Linux kernel is used numerous operating systems including Linux, FreeBSD, 
 Android and others.
 
-## Question 3
+## What is multiprogramming?
 
-Multiprogramming is a rudimentary form of parallel processing in which several programs are run at the same time on a uniprocessor.
+_Multiprogramming_ is a rudimentary form of parallel processing in which several programs are run at the same time on a uniprocessor.
 In a multiprogramming system there are one or more programs loaded in main memory which are ready to execute. Only one program at a time is able to get the CPU for executing its instructions (i.e., there is at most 
 one process running on the system) while all the others are waiting their turn.The main idea of multiprogramming is to maximize the use of CPU time. Indeed, suppose the currently running 
 process is performing an I/O task (which, by definition, does not need the CPU to be accomplished). Then, the OS may interrupt that process and give the control to one of the other in-main-memory programs that are 
 ready to execute (i.e. process context switching). In this way, no CPU time is wasted by the system waiting for the I/O task to be completed, and a running process keeps executing until either it voluntarily releases the 
 CPU or when it blocks for an I/O operation. Therefore, the ultimate goal of multiprogramming is to keep the CPU busy as long as there are processes ready to execute.
 
-## Question 4
+## What is a process?
 
 **_Process_**
 A process is defined as an entity which represents the basic unit of work to be implemented in the system.
@@ -56,7 +56,7 @@ A process can initiate a subprocess, which is a called a child process (and the 
 referred to as its parent ). A child process is a replica of the parent process and shares some of its resources, 
 but cannot exist if the parent is terminated.
 
-## Question 5
+## How is the execution context of a process used by the OS?
 The execution context, or process state, is the internal data by which the operating system is able to supervise 
 and control the process. This internal information is separated from the process, because the operating system 
 has information not permitted to the process. The context includes all of the information that the operating 
@@ -65,7 +65,7 @@ context includes the contents of the various processor registers, such as the pr
 registers. It also includes information of use to the operating system, such as the priority of the process and 
 whether the process is waiting for the completion of a particular I/O event.
 
-## Question 6
+## List and briefly explain five storage management responsibilities of a typical OS.
 
 **_Process isolation_**
 This is the prevention of data and instruction from interfering with each other process isolation helps this happen.
@@ -84,7 +84,7 @@ also threatens the integrity of programs.
 Is a process whereby memory is stored for a long period of time even when the computer is switch off it is 
 stored in the RAM.
 
-## Question 7
+## Explain the distinction between a real address and a virtual address.
 
 **_Real Address_**
 In computing, a physical address (also real address, or binary address), is a memory address that is 
@@ -101,7 +101,7 @@ user jobs reside in main memory concurrently, so that there would not be a hiatu
 between the execution of successive processes while one process was written out
 to secondary store and the successor process was read in.
 
-## Question 8
+## Describe the round-robin scheduling technique.
 
 **_Round-robin (RR)_** is one of the algorithms employed by process and network schedulers in computing.One of 
 the oldest, simplest, fairest and most widely used algorithm is round robin (RR).In the round robin scheduling, 
@@ -116,7 +116,7 @@ short causes too many context switches and lower the CPU efficiency. On the othe
 too long may cause poor response time and appoximates FCFS.In any event, the average waiting time under 
 round robin scheduling is often quite long.
 
-## Question 9
+## Explain the difference between a monolithic kernel and a microkernel.
 
 The kernel internally contains many components, such as a memory manager, scheduler, numerous device 
 drivers, a file system, and so on. When an operating system is being written, there are numerous design 
@@ -137,7 +137,7 @@ In microkernel operating system, processes are divided and stored in a different
 the microkernel operating system is to keep the OS kernel small with basic and minimum process. Other 
 services are stored in a different server. They communicate, via a communication channel.
 
-## Question 10
+## What is multithreading?
 
 **_Multithreading_**
 
@@ -148,7 +148,7 @@ user can also be another program) is kept track of as a thread with a separate i
 behalf of the initial request for that thread and are interrupted by other requests, the status of work on behalf 
 of that thread is kept track of until the work is completed.
 
-## Question 11
+## List the key design issues for an SMP operating system.
 
 Symmetric-multiprocessing (SMP) software is expected to be quickly available to support these peripherals. 
 While developing software for SMP systems  software developers must consider some common design issues. 
